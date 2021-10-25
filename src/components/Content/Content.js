@@ -7,9 +7,9 @@ function Content(props) {
         <div className="row g-0">
           <div className="col-md-4">
             <img
-              src="/proj1/images/Blue.png"
+              src={props.img}
               className="img-fluid rounded-start"
-              alt="Image not available"
+              alt="Not available"
             />
           </div>
           <div className="col-md-8">
