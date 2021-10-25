@@ -36,7 +36,7 @@ const data = [
 ];
 
 function Main() {
-  const [dataSet, setDataSet] = useState(0);
+  const [dataSet, setDataSet] = useState(4);
 
   const indexHandler = (x) => {
     setDataSet(x);
@@ -45,7 +45,7 @@ function Main() {
   return (
     <>
       <h2 className="text-center mb-3">TimeLine</h2>
-      <Navbar setIndex={indexHandler} />
+      <Navbar setIndex={indexHandler} currentidx={dataSet}/>
       <Content
         title={data[dataSet].date}
         img={data[dataSet].imageUrl}
