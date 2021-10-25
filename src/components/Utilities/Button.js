@@ -10,6 +10,7 @@ function Button(props) {
         value={props.value}
         name="group"
         onClick={props.onsetHandler}
+        checked={props.checked}
       />
       <label className="btn btn-outline-primary" htmlFor={props.id}>
         Radio {props.value}
